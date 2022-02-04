@@ -1,0 +1,169 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #FFD359;
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
+}
+
+header{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo-container,.cart,.nav-links{
+    display: flex;
+}
+
+.logo-container{
+    flex: 1;
+
+}
+
+.logo{
+    font-weight: 400;
+    margin: 10px;
+}
+
+.logo-container img{
+    height: 03vh;
+}
+
+nav{
+   
+    flex: 2;
+}
+
+.nav-links{
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link{
+    color: #5f5f79;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.cart{
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction{
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 45px;
+    font-weight: 500;
+    background: linear-gradient(to right,#494964,#6f6f89);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    margin-top: 5px;
+    font-size: 22px;
+    color: #585772;
+
+}
+
+.cta{
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select{
+    border: 2px solid #c36cbb;
+    background: transparent;
+    color: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;   
+}
+.cta-add{
+    background: #c36cbb;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    color: white;
+    margin: 30px 0px 0px 0px;   
+}
+
+
+.cover{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.cover img{
+    height: 100%;
+    width: 50vh;
+    filter: drop-shadow(0px 3px 5px black);
+    animation: drop 1.5s ease;
+}
+
+
+@keyframes drop {
+    0%{
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+
+    }   
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation{
+        flex-direction:column ;
+    }
+    .introduction{
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .intro-text h1{
+        font-size: 30px;
+    }
+
+    .intro-text p{
+        font-size: 18px;
+    }
+
+    .cta{
+        padding: 10px 0px 0px 0px;
+    }
+
+    .cover img{
+        height: 50%;
+        width: 100%;
+        padding: 20px 0px 0px 0px;
+    }
+    
+}
